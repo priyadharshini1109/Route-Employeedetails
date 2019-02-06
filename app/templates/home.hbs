@@ -1,0 +1,10 @@
+<div class="jumbo">
+  <h2>Welcome!</h2>
+  <p> You can find a list of employees who works in this organization</p>
+  {{#link-to "about" class="button"}}
+  About
+  {{/link-to}}
+</div>
+{{#each model as |employeeProfile|}}
+{{employee-listing employee=employeeProfile}}
+{{/each}}
